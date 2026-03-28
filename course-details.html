@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-LEARNING PLATFORM | Course Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="details">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">E-LEARNING PLATFORM</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a class="active" href="courses.html">Courses</a>
+        <a href="progress.html">Progress</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="mode-toggle" id="modeToggle" aria-label="Toggle theme">Theme</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container details-layout">
+      <section>
+        <h1 id="courseTitle">Modern JavaScript Bootcamp</h1>
+        <p class="lead" id="courseDescription">A project-first course that takes you from core JavaScript to modern patterns for building responsive, maintainable web applications.</p>
+
+        <div class="video-wrap">
+          <iframe
+            id="courseVideoFrame"
+            class="hidden"
+            src=""
+            title="Course video preview"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+          <video controls preload="metadata" playsinline poster="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80">
+            <source id="courseVideoSource" src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p class="video-fallback">If video does not load, open directly: <a id="courseVideoLink" href="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" target="_blank" rel="noopener">Play Video</a></p>
+
+        <h2>Course Modules</h2>
+        <ul class="lesson-list" id="courseModules">
+          <li>Module 1: JavaScript fundamentals and variables</li>
+          <li>Module 2: Arrays, objects, and reusable functions</li>
+          <li>Module 3: DOM interactions and events</li>
+          <li>Module 4: Async flows with promises and fetch</li>
+          <li>Module 5: Mini project and deployment basics</li>
+        </ul>
+      </section>
+
+      <aside class="details-sidebar">
+        <div class="panel">
+          <h3>Instructor</h3>
+          <p><strong id="courseInstructor">Aisha Khan</strong></p>
+          <p id="instructorBio">Senior Frontend Engineer with 9+ years teaching web development and mentoring junior engineers.</p>
+        </div>
+        <div class="panel">
+          <h3>Course Info</h3>
+          <p id="courseDuration">Duration: 10h 30m</p>
+          <p id="courseLevel">Level: Beginner to Intermediate</p>
+          <p id="courseRating">Rating: 4.8</p>
+          <button class="btn btn-primary full" id="enrollBtn">Enroll Now</button>
+          <p id="enrollMessage" class="hidden success-text">You are enrolled. Start learning now.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 E-LEARNING PLATFORM. Learn boldly.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
