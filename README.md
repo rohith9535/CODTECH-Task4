@@ -5,7 +5,7 @@
 - **Name:** Rohith K
 - **Company:** CODTECH IT SOLUTION
 - **Intern ID:** CTIS6787
-- 
+
 ## E-LEARNING PLATFORM UI
 
 A responsive multi-page E-Learning Platform frontend built using **HTML, CSS, and JavaScript**.  
